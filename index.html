@@ -21,16 +21,6 @@
   <meta name="viewport" content="target-densitydpi=device-dpi" />
   <!-- Mobile IE needs ClearType for smoothing fonts -->
   <meta http-equiv="cleartype" content="on">
-  <meta name="smartbanner:title" content="SamSprung (GitHub)">
-  <meta name="smartbanner:author" content="AbandonedCart">
-  <meta name="smartbanner:price" content="FREE">
-  <meta name="smartbanner:price-suffix-google" content=" - Direct Download">
-  <meta name="smartbanner:icon-google" content="img/application_icon.png">
-  <meta name="smartbanner:button" content="INSTALL">
-  <meta name="smartbanner:button-url-google" content="https://github.com/SamSprung/SamSprung-TooUI/releases">
-  <meta name="smartbanner:enabled-platforms" content="android">
-  <!-- End SmartBanner configuration -->
-  <link rel="stylesheet" href="css/smartbanner.min.css">
   <title>SamSprung: README</title>
 </head>
 <body>
@@ -42,10 +32,21 @@
       <h1><a href="keyboard/index.html">SamSprung TooIME</a></h1>
     </p>
     <br />
-    <img src="img/feature_graphic.png">
+    <div id="donate-button-container">
+    <div id="donate-button"></div>
+    <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+    <script>
+      PayPal.Donation.Button({
+      env:'production',
+      hosted_button_id:'Q2LFH2SC8RHRN',
+      image: {
+      src:'img/feature_graphic.png',
+      alt:'Donate with PayPal button',
+      title:'PayPal - The safer, easier way to pay online!',
+      }
+      }).render('#donate-button');
+    </script>
+    </div>
 </center>
 </body>
-<script src="src/smartbanner.min.js"></script>
-<script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
-<script src="src/jquery.paypal.js"></script>
 </html>
