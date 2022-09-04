@@ -113,8 +113,6 @@
 }
 
 .collapsible-content img {
-	width: 98%;
-	margin: 10px 0px;
 	cursor: pointer;
 	-webkit-transition-property: opacity; /* Safari */
 	-webkit-transition-duration: 0.5s; /* Safari */

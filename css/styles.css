@@ -15,3 +15,9 @@ body {
 	clear: both;
 	overflow-x: hidden;
 }
+
+img {
+	display: block;
+	margin: 0 auto;
+	max-width: 50%;
+}
