@@ -22,32 +22,30 @@
   <!-- Mobile IE needs ClearType for smoothing fonts -->
   <meta http-equiv="cleartype" content="on">
   <link rel="stylesheet" href="css/styles.css" />
-  <title>SamSprung: README</title>
+  <title>SamSprung Too Project</title>
 </head>
 <body>
   <center>
     <p>
-      <h1><a href="launcher/index.html">SamSprung TooUI</a></h1>
+      <h1 class="readme"><a href="launcher/index.html">SamSprung TooUI</a></h1>
+      <h1 class="readme"><a href="keyboard/index.html">SamSprung TooIME</a></h1>
+      <br /><br />
+      <div id="donate-button-container">
+        <div id="donate-button"></div>
+        <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+        <script>
+        PayPal.Donation.Button({
+          env:'production',
+          hosted_button_id:'Q2LFH2SC8RHRN',
+          image: {
+            src:'img/feature_graphic.png',
+            alt:'Donate with PayPal button',
+            title:'PayPal - The safer, easier way to pay online!',
+          }
+        }).render('#donate-button');
+        </script>
+      </div>
     </p>
-    <p>
-      <h1><a href="keyboard/index.html">SamSprung TooIME</a></h1>
-    </p>
-    <br />
-    <div id="donate-button-container">
-      <div id="donate-button"></div>
-      <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
-      <script>
-      PayPal.Donation.Button({
-        env:'production',
-        hosted_button_id:'Q2LFH2SC8RHRN',
-        image: {
-          src:'img/feature_graphic.png',
-          alt:'Donate with PayPal button',
-          title:'PayPal - The safer, easier way to pay online!',
-        }
-      }).render('#donate-button');
-      </script>
-    </div>
   </center>
 </body>
 </html>

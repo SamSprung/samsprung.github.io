@@ -6,7 +6,7 @@ body {
 	linear-gradient(to right,
 		rgba(17, 16, 24, 1),
 		rgba(32, 48, 144, 1));
-	background-size: 100% auto;
+	background-size: auto;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center top;
@@ -16,8 +16,19 @@ body {
 	overflow-x: hidden;
 }
 
+h1.readme {
+	display: inline-block;
+	margin: 10px;
+}
+
 img {
 	display: block;
 	margin: 0 auto;
 	max-width: 50%;
+}
+
+img#donate-button {
+	display: block;
+	margin: 0 auto;
+	max-width: 98%;
 }
