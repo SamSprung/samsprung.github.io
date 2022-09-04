@@ -1,0 +1,17 @@
+body {
+	background: linear-gradient(
+		rgba(0, 0, 0, 0.8),
+		rgba(0, 0, 0, 0.8)
+	), url(../img/background.gif),
+	linear-gradient(to right,
+		rgba(17, 16, 24, 1),
+		rgba(32, 48, 144, 1));
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center top;
+	font-size: medium;
+	color: white;
+	clear: both;
+	overflow-x: hidden;
+}

@@ -31,6 +31,8 @@
   <meta name="smartbanner:enabled-platforms" content="android">
   <!-- End SmartBanner configuration -->
   <link rel="stylesheet" href="../css/smartbanner.min.css">
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/panes.css" />
   <title>SamSprung: README</title>
 </head>
 <body>
@@ -38,91 +40,120 @@
     <a href="https://play.google.com/store/apps/details?id=com.eightbit.samsprung.ime"><img src="../img/google-play-badge.png" /></a>
   </p>
 
-  <h2>SamSprung Keyboard</h2>
+  <div class="accordion">
+    <h1>SamSprung Keyboard</h1>
+    <div class="pane" style="display:block">
 
-  The first (and only) true Z Flip cover screen IME
-  <br />
-  After releasing the code to enable keyboards as part of SamSprung TooUI, this is a standalone cover screen IME.
-  <br />
-  This project has been developed in the hope of one day being natively supported.
+      The first (and only) true Z Flip cover screen IME
+      <br />
+      After releasing the code to enable keyboards as part of SamSprung TooUI, this is a standalone cover screen IME.
+      <br />
+      This project has been developed in the hope of one day being natively supported.
+      <br /><br />
+      <button type="button" class="collapsible">How to Install</button>
+      <div class="collapsible-content">
+        <ul>
+          <li><a href="https://github.com/SamSprung/SamSprung-Keyboard/releases">Download apk from the latest release Assets</a></li>
+          <li>Open the apk with your favorite file manager</li>
+          <li>Follow the system prompts to install the apk</li>
+        </ul>
+      </div>
+      <button type="button" class="collapsible">How to Activate</button>
+      <div class="collapsible-content">
+        <h5>From Home Screen</h5>
+        <ul>
+          <li>Open SamSprung Keyboard from the App Drawer</li>
+          <li>Enable the permission switches to enable access</li>
+          <li>Make sure to return to the app from any prompts</li>
+          <li>Enable the keyboard, but do not set as the default</li>
+        </ul>
+      </div>
+    </div>
 
-  <h4>How to Install</h4>
+    <h1>Initial SamSprung Setup</h1>
+    <div class="pane">
 
-  <ul>
-    <li><a href="https://github.com/SamSprung/SamSprung-Keyboard/releases">Download apk from the latest release Assets</a></li>
-    <li>Open the apk with your favorite file manager</li>
-    <li>Follow the system prompts to install the apk</li>
-  </ul>
+      The bar at the top of the settings page includes support and donation options. The first button displays the current build number and will turn red when an update is available. Clicking it will install the new version.
+      <br /><br />
+      The middle button(s) are for donations. Google Play users will only be able to use Google Play, but GitHub users will also have a PayPal option. Donations are optional, but are greatly appreciated and fund the creation of new features. Please keep in mind that much of what you see in other cover screen apps is the result of this one. There are no restrictions on this app, meaning you are not required to unlock any features or subscribe to receive new ones.
+      <br /><br />
+      The final button is to report bugs or request help. If you choose to provide contact details, an issue will automatically be submitted. If you would prefer to submit the issue using a GitHub account, the form will open a new issue page on GitHub. A logcat will already be copied to the clipboard and can be pasted in the logcat box.
 
-  <h4>How to Activate</h4>
+      <br /><br />
+      <img src="img/supportitems.png">
+      <br /><br />
 
-  <h5>From Home Screen</h5>
-  <ul>
-    <li>Open SamSprung Keyboard from the App Drawer</li>
-    <li>Enable the permission switches to enable access</li>
-    <li>Make sure to return to the app from any prompts</li>
-    <li>Enable the keyboard, but do not set as the default</li>
-  </ul>
+      Before reporting an issue, please make sure to install any pending updates. Updates are checked simply by launching the settings page. The button in the top left will flash red to notify of an update.
+      <br /><br />
+      <button type="button" class="collapsible">Secure Lock Screen Setup</button>
+      <div class="collapsible-content">
+        Settings -> Lock screen -> Screen lock type -> Fingerprints -> ON
+        <br />
+        (Optional) Settings -> Biometrics and security -> Fingerprints -> Fingerprint always on -> OFF
+        <br />
+        When launching an app, you will be prompted for fingerprint authentication
+      </div>
 
-  <h2>Initial SamSprung Setup</h2>
+      <button type="button" class="collapsible">System Settings Overlay</button>
+      <div class="collapsible-content">
+        If you would like to prevent incompatibility with Settings, Developer Options provides a toggle to allow overlays. This presents some risk for untrustworthy apps to interact with your device settings and should only be enabled if you trust all apps with overlay permission.
+      </div>
 
-  The bar at the top of the settings page includes support and donation options. The first button displays the current build number and will turn red when an update is available. Clicking it will install the new version.
-  <br /><br />
-  The middle button(s) are for donations. Google Play users will only be able to use Google Play, but GitHub users will also have a PayPal option. Donations are optional, but are greatly appreciated and fund the creation of new features. Please keep in mind that much of what you see in other cover screen apps is the result of this one. There are no restrictions on this app, meaning you are not required to unlock any features or subscribe to receive new ones.
-  <br /><br />
-  The final button is to report bugs or request help. If you choose to provide contact details, an issue will automatically be submitted. If you would prefer to submit the issue using a GitHub account, the form will open a new issue page on GitHub. A logcat will already be copied to the clipboard and can be pasted in the logcat box.
+      <button type="button" class="collapsible">Prevent Service Termination</button>
+      <div class="collapsible-content">
+        Settings -> Battery and device care -> Battery -> Background usage limits -> Never sleeping apps -> +
+        <br />
+        Select SamSprung TooUI / SamSprung Keyboard -> Add
+      </div>
 
-  <br /><br />
-  <img src="img/supportitems.png">
-  <br /><br />
+      <button type="button" class="collapsible">Permissions</button>
+      <div class="collapsible-content">
+        <img src="img/permissionitems.png">
+        <br /><br />
 
-  Before reporting an issue, please make sure to install any pending updates. Updates are checked simply by launching the settings page. The button in the top left will flash red to notify of an update.
+        Accessibility will allow the keyboard to function. The accessibility service is strictly designed to transmit user-initiated key events. All accessibility actions are one way and do not read any information from the device.
+        <br /><br />
+        Enabling accessibility will enable the "Keyboard (IME)" settings. This is used to enable the onscreen keyboard. It only needs to be enabled as an option. It is not recommended to set it as default.
+        <br /><br />
+        Overlay permission is what allows the keyboard to appear on top of other windows. Without it, the keyboard will not be visible when using other apps. This permission is required to use the keyboard.
+      </div>
 
-  <h3>Secure Lock Screen Setup</h3>
+      <button type="button" class="collapsible">UI Options</button>
+      <div class="collapsible-content">
+        <img src="img/keyboardoptions.png">
+        <br /><br />
 
-  Settings -> Lock screen -> Screen lock type -> Fingerprints -> ON
-  <br />
-  (Optional) Settings -> Biometrics and security -> Fingerprints -> Fingerprint always on -> OFF
-  <br />
-  When launching an app, you will be prompted for fingerprint authentication
+        The color bar is a theme option. Click the bar to reveal the sliders and customize your theme. There are no preset themes. The color you choose will be used throughout the various menus and icons of the keyboard interface.
+        <br /><br />
+        Sound and vibration options should be relatively obvious, but provide audible and tactile feedback when keys are pressed. This only applies to the conventional keyboard keys. Other buttons are silent and do not vibrate.
+      </div>
+    </div>
 
-  <h3>System Settings Overlay</h3>
+    <h1>Keyboard Usage</h1>
+    <div class="pane">
 
-  If you would like to prevent incompatibility with Settings, Developer Options provides a toggle to allow overlays. This presents some risk for untrustworthy apps to interact with your device settings and should only be enabled if you trust all apps with overlay permission.
+      Close the cover, launch an app, click an input box, and begin typing. It works much like the stock Android keyboard, only smaller. This keyboard will respond to normal requests to show a keyboard.
+      <br /><br />
+      Use the direction keys at the bottom to swap between qwerty, T9, number, and handwriting pages. Additional pages may be added in future versions.
+      <br /><br />
+      Press the X at the bottom to close the keyboard. "DONE" will also close the keyboard, but will perform the submit action associated with the current view. The action performed is set by the input box, not the keyboard.
+      <br /><br />
+      When using the T9 keyboard, toggle prediction using the T9 button. If disabled, press a key repeatedly to change between assigned letters. Pause briefly to choose another letter from thee same key.
+    </div>
 
-  <h3>Permissions</h3>
-
-  <img src="img/permissionitems.png">
-  <br /><br />
-
-  Accessibility will allow the keyboard to function. The accessibility service is strictly designed to transmit user-initiated key events. All accessibility actions are one way and do not read any information from the device.
-  <br /><br />
-  Enabling accessibility will enable the "Keyboard (IME)" settings. This is used to enable the onscreen keyboard. It only needs to be enabled as an option. It is not recommended to set it as default.
-  <br /><br />
-  Overlay permission is what allows the keyboard to appear on top of other windows. Without it, the keyboard will not be visible when using other apps. This permission is required to use the keyboard.
-
-  <h3>UI Options</h3>
-
-  <img src="img/keyboardoptions.png">
-  <br /><br />
-
-  The color bar is a theme option. Click the bar to reveal the sliders and customize your theme. There are no preset themes. The color you choose will be used throughout the various menus and icons of the keyboard interface.
-  <br /><br />
-  Sound and vibration options should be relatively obvious, but provide audible and tactile feedback when keys are pressed. This only applies to the conventional keyboard keys. Other buttons are silent and do not vibrate.
-
-  <h2>SamSprung Keyboard</h2>
-
-  Close the cover, launch an app, click an input box, and begin typing. It works much like the stock Android keyboard, only smaller. This keyboard will respond to normal requests to show a keyboard.
-  <br /><br />
-  Use the direction keys at the bottom to swap between qwerty, T9, number, and handwriting pages. Additional pages may be added in future versions.
-  <br /><br />
-  Press the X at the bottom to close the keyboard. "DONE" will also close the keyboard, but will perform the submit action associated with the current view. The action performed is set by the input box, not the keyboard.
-  <br /><br />
-  When using the T9 keyboard, toggle prediction using the T9 button. If disabled, press a key repeatedly to change between assigned letters. Pause briefly to choose another letter from thee same key.
-
-  <h2>Closing Remarks</h2>
-
-  SamSprung TooIME is a paid keyboard to fund testing and maintaining universal compatibility. There are a number of other features that are not visible when using SamSprung, but play a large role in making it run. These features, some proprietary, have been written or modified specifically for this project. Steal them if you feel you must, but don't think it goes unnoticed.
+    <h1>SamSprung Disclaimer</h1>
+    <div class="static centered" style="display:block">
+      <p>
+        <i>SamSprung TooIME is a paid keyboard to fund testing and maintaining universal compatibility.
+          <br />
+          There are a number of other features that are not visible when using SamSprung, but play a large role in making it run. These features, some proprietary, have been written or modified specifically for this project. Steal them if you feel you must, but don't think it goes unnoticed.</i>
+        </p>
+      </div>
+    </div>
+  </div>
 </body>
+<script src="../src/jquery-1.8.2.min.js"></script>
+<script src="../src/jquery.tools.min.js"></script>
+<script src="../src/jquery.panes.js"></script>
 <script src="../src/smartbanner.min.js"></script>
 </html>

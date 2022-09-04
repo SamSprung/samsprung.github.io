@@ -1,0 +1,140 @@
+/* root element for accordion. decorated with rounded borders and gradient background image */
+.accordion {
+	margin-left: 90px;
+	margin-right: 80px;
+	padding: 10px;
+	background: rgba(0,0,0,0.2);
+}
+@media screen and (max-width: 500px) {
+	.accordion {
+		margin-right: 50px;
+	}
+}
+/* accordion pane */
+.accordion .pane {
+	border: 1px solid #fff;
+  border-width: 1px 1px;
+  display: none;
+  padding: 15px;
+  color: #fff;
+}
+.accordion .static {
+	border: 1px solid #fff;
+  border-width: 1px 1px;
+  display: none;
+  padding: 15px;
+  color: #fff;
+}
+.centered {
+	text-align: center;
+}
+.accordion .pane a, .accordion .static a {
+	color: #00ff00;
+}
+/* accordion header */
+.accordion h1 {
+  background: rgba(255,255,255,0.4);
+  margin: 0;
+  padding: 5px 15px;
+  font-size: 1.4em;
+  color: #fff !important;
+  text-align: center;
+  font-weight: normal;
+  border: 1px solid #fff;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+/* currently active header */
+.accordion h1.current {
+  cursor: default;
+  background: #999;
+}
+/* a title inside pane */
+.accordion .pane h3, .accordion .static h3 {
+	text-align: center !important;
+}
+.accordion .pane h3 img, .accordion .static h3 img {
+	display: block;
+	margin: 0 auto;
+	max-width: 90%;
+	padding-right: 2.5em !important;
+}
+.accordion .pane p, .accordion .static p {
+	font-size: 1em;
+}
+.accordion .pane p img, .accordion .static p img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 50%;
+	float: left;
+}
+.accordion .pane li {
+	font-size: 1.1em;
+}
+
+.subpane {
+	border: 1px solid #fff;
+  border-width: 1px 1px;
+  padding: 15px;
+  color: #fff;
+}
+
+.collapsible {
+	background-color: rgba(255, 255, 255, 0.4);
+	color: white;
+	cursor: pointer;
+	padding: 12px;
+	width: 100%;
+	border: none;
+	text-align: center;
+	outline: none;
+	font-size: 1.2em;
+	outline: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+.active, .collapsible:hover {
+	background-color: rgba(128, 128, 128, 0.4);
+}
+
+.collapsible-content {
+	padding: 12px 12px;
+	display: none;
+	overflow: hidden;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+.collapsible-content p {
+	margin: -12px 0px;
+}
+
+.collapsible-content li {
+	font-size: 1.1em;
+}
+
+.collapsible-content img {
+	width: 98%;
+	margin: 10px 0px;
+	cursor: pointer;
+	-webkit-transition-property: opacity; /* Safari */
+	-webkit-transition-duration: 0.5s; /* Safari */
+	transition-property: opacity;
+	transition-duration: 0.5s;
+}
+
+.collapsible-content img:hover {
+	opacity: 0.8;
+	outline: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+@media screen and (max-width: 956px) {
+	.accordion .pane li {
+		font-size: 1.0em;
+	}
+	.collapsible {
+		font-size: 1.0em;
+	}
+	.collapsible-content li {
+		font-size: 1.0em;
+	}
+}
