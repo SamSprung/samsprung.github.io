@@ -21,22 +21,12 @@
   <meta name="viewport" content="target-densitydpi=device-dpi" />
   <!-- Mobile IE needs ClearType for smoothing fonts -->
   <meta http-equiv="cleartype" content="on">
-  <meta name="smartbanner:title" content="SamSprung TooIME">
-  <meta name="smartbanner:author" content="AbandonedCart">
-  <meta name="smartbanner:price" content="$1.99">
-  <meta name="smartbanner:price-suffix-google" content=" - Google Play">
-  <meta name="smartbanner:icon-google" content="img/application_icon.png">
-  <meta name="smartbanner:button" content="INSTALL">
-  <meta name="smartbanner:button-url-google" content="https://play.google.com/store/apps/details?id=com.eightbit.samsprung.ime">
-  <meta name="smartbanner:enabled-platforms" content="android">
-  <!-- End SmartBanner configuration -->
-  <link rel="stylesheet" href="../css/smartbanner.min.css">
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="stylesheet" href="../css/panes.css" />
   <title>SamSprung TooIME: README</title>
 </head>
 <body>
-  <p align="center">
+  <p class="google" align="center">
     <a href="https://play.google.com/store/apps/details?id=com.eightbit.samsprung.ime"><img src="../img/google-play-badge.png" /></a>
   </p>
 
@@ -152,7 +142,11 @@
   </div>
 </body>
 <script src="../src/jquery-1.8.2.min.js"></script>
+<script>
+if ($('#UserAgent').val(navigator.userAgent).indexOf("SamSprung") != -1) {
+    $('.google').empty();
+}
+</script>
 <script src="../src/jquery.tools.min.js"></script>
 <script src="../src/jquery.panes.js"></script>
-<script src="../src/smartbanner.min.js"></script>
 </html>
