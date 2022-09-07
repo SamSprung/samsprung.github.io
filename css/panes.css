@@ -121,6 +121,11 @@
 }
 
 @media screen and (max-width: 956px) {
+	.accordion {
+		margin-left: 4px;
+		margin-right: 4px;
+		padding: 2px;
+	}
 	.accordion .pane li {
 		font-size: 1.0em;
 	}
