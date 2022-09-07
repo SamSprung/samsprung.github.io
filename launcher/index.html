@@ -276,6 +276,9 @@
       There are as many pages as you can add widgets, but memory will eventually run out. All widgets are saved between uses.
     </div>
 
+    <h1 id="navigation">SamSprung TooIME</h1>
+    <div class="static"></div>
+
     <h1>SamSprung Disclaimer</h1>
     <div class="static centered" style="display:block">
       <p>
@@ -292,6 +295,14 @@
 if ($('#UserAgent').val(navigator.userAgent).indexOf("SamSprung") != -1) {
     $('.google').empty();
 }
+</script>
+<script>
+function performNav() {
+    var target = window.location.href.replace("launcher", "keyboard");
+    window.location.href = target
+}
+var navigation = document.getElementById("navigation");
+navigation.setAttribute("onclick", "performNav()");
 </script>
 <script src="../src/jquery.tools.min.js"></script>
 <script src="../src/jquery.panes.js"></script>
