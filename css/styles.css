@@ -16,15 +16,6 @@ body {
 	overflow-x: hidden;
 }
 
-a {
-	color: #FFFFFF;
-}
-
-h1.readme {
-	display: inline-block;
-	margin: 10px;
-}
-
 img {
 	display: block;
 	margin: 0 auto;
@@ -34,5 +25,15 @@ img {
 img#donate-button {
 	display: block;
 	margin: 0 auto;
-	max-width: 98%;
+	max-width: 50%;
+}
+
+a.readme {
+	display: inline-block;
+	margin: 10px;
+	color: #FFFFFF;
+}
+
+a.readme img {
+	max-width: 80%;
 }
