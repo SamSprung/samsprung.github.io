@@ -28,12 +28,21 @@ img#donate-button {
 	max-width: 50%;
 }
 
-a.readme {
-	display: inline-block;
-	margin: 10px;
-	color: #FFFFFF;
+div.readme {
+	margin: 0 auto;
 }
 
-a.readme img {
+div.readme a {
+	display: inline-block;
+}
+
+div.readme img {
 	max-width: 80%;
+	margin: 10px;
+}
+
+@media screen and (max-width: 640px) {
+	img#donate-button {
+		max-width: 75%;
+	}
 }
