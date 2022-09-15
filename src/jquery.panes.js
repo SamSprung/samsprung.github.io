@@ -81,15 +81,14 @@ var urlParams = new URLSearchParams(window.location.search);
 window.addEventListener('load', function() {
 	if (urlParams.has('s')) {
 		for (var i = 0; i < headers.length; i++) {
-			var title = headers[i].innerHTML.toLowerCase();
-			if (title.includes(urlParams.get('s').toLowerCase())) {
+			if (headers[i].innerHTML.toLowerCase().includes(urlParams.get('s').toLowerCase())) {
 				headers[i].click();
 			}
 		}
 	}
-	if (urlParams.has('d')) {
+	if (urlParams.has('b')) {
 		for (var i = 0; i < coll.length; i++) {
-			if (coll[i].innerHTML.toLowerCase().includes(urlParams.get('d').toLowerCase())) {
+			if (coll[i].innerHTML.toLowerCase().includes(urlParams.get('b').toLowerCase())) {
 				coll[i].classList.toggle("active");
 				coll[i].nextElementSibling.style.display = "block";
 				window.scrollTo({ top: coll[i].nextElementSibling.offsetTop, behavior: 'smooth' });
