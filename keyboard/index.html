@@ -154,32 +154,12 @@
 
     <h1 id="navigation">SamSprung TooUI</h1>
     <div class="static"></div>
-
-    <h1 class="disclaimer">SamSprung Disclaimer</h1>
-    <div class="static centered" style="display:block">
-      <p>
-        <i>SamSprung is not affiliated, associated, authorized, endorsed by, or in any way connected with Samsung.
-          <br/>
-          SamSprung TooIME is a paid keyboard to fund testing and maintaining universal compatibility. When using SamSprung, a number of features are not visible that play a large role in making it run. These features, some proprietary, have been written or modified specifically for this project. Steal them if you feel you must, but don't think it goes unnoticed.</i>
-      </p>
-    </div>
   </div>
 </div>
 </body>
+<script src="../src/jquery.notice.js"></script>
 <script src="../src/jquery-1.8.2.min.js"></script>
-<script>
-if (navigator.userAgent.indexOf("SamSprung") != -1) {
-  $('.google').empty();
-}
-</script>
-<script>
-function performNav() {
-  var target = window.location.href.replace("keyboard", "launcher");
-  window.location.href = target
-}
-var navigation = document.getElementById("navigation");
-navigation.setAttribute("onclick", "performNav()");
-</script>
+<script src="../src/jquery.menu.js"></script>
 <script src="../src/jquery.tools.min.js"></script>
 <script src="../src/jquery.panes.js"></script>
 </html>
