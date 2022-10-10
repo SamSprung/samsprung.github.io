@@ -134,3 +134,10 @@
 		font-size: 1.0em;
 	}
 }
+
+h1.disclaimer {
+	padding-top: 9px;
+	padding-bottom: 9px;
+	font-size: 0.8em;
+	font-weight: bold;
+}
