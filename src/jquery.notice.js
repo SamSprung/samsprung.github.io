@@ -82,9 +82,9 @@ centerTag.appendChild(iTag2);
 centerTag.appendChild(document.createElement('br'));
 var iTag3 = document.createElement('i');
 if (path.includes("launcher")) {
-	iTag3.textContent = "SamSprung TooUI is free and open source, as this functionality was never meant to be locked."
+	iTag3.textContent = "SamSprung TooUI is a free and open-source project, as this functionality was never meant to be restricted."
 } else if (path.includes("keyboard")) {
-	iTag3.textContent = "SamSprung TooIME is a paid keyboard to fund testing and maintaining universal compatibility."
+	iTag3.textContent = "SamSprung TooIME is a paid (optional) keyboard to fund testing and maintaining universal compatibility."
 }
 centerTag.appendChild(iTag3);
 var accordian = document.getElementsByClassName("accordion")[0];
