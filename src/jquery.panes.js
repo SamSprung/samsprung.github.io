@@ -83,16 +83,18 @@ for (var i = 0; i < coll.length; i++) {
 }
 var urlParams = new URLSearchParams(window.location.search);
 window.addEventListener('load', function() {
-	if (urlParams.has('s')) {
+	if (urlParams.has('s') || urlParams.has('q')) {
+		var params = urlParams.has('q') ? urlParams.get('q') : urlParams.get('s');
 		for (var i = 0; i < headers.length; i++) {
-			if (headers[i].innerHTML.toLowerCase().includes(urlParams.get('s').toLowerCase())) {
+			if (headers[i].innerHTML.toLowerCase().includes(params.toLowerCase())) {
 				headers[i].click();
 			}
 		}
 	}
-	if (urlParams.has('b')) {
+	if (urlParams.has('b') || urlParams.has('d')) {
+		var params = urlParams.has('d') ? urlParams.get('d') : urlParams.get('b');
 		for (var i = 0; i < coll.length; i++) {
-			if (coll[i].innerHTML.toLowerCase().includes(urlParams.get('b').toLowerCase())) {
+			if (coll[i].innerHTML.toLowerCase().includes(params.toLowerCase())) {
 				coll[i].classList.toggle("active");
 				coll[i].nextElementSibling.style.display = "block";
 				window.scrollTo({ top: coll[i].nextElementSibling.offsetTop, behavior: 'smooth' });
