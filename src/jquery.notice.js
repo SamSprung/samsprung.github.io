@@ -7,7 +7,7 @@
  * are met:
  *
  * For the purpose of this license, the phrase "SamSprung labels" shall
- * be used to refer to the labels "8-Bit Dream", "TwistedUmbrella",
+ * be used to refer to the labels "8-bit Dream", "TwistedUmbrella",
  * "SamSprung" and "AbandonedCart" and these labels should be considered
  * the equivalent of any usage of the aforementioned phrase.
  *
@@ -73,14 +73,17 @@ divTag.appendChild(pTag);
 var centerTag = document.createElement('center');
 pTag.appendChild(centerTag);
 var iTag = document.createElement('i');
+iTag.style.fontSize = "0.9em";
 iTag.textContent = "SamSprung is not affiliated, associated, authorized, endorsed by, or in any way connected with Samsung."
 centerTag.appendChild(iTag);
 centerTag.appendChild(document.createElement('br'));
 var iTag2 = document.createElement('i');
+iTag2.style.fontSize = "0.9em";
 iTag2.textContent = "SamSprung features, some proprietary, have been written or modified specifically for this project. Steal them if you feel you must, but don't think it goes unnoticed."
 centerTag.appendChild(iTag2);
 centerTag.appendChild(document.createElement('br'));
 var iTag3 = document.createElement('i');
+iTag3.style.fontSize = "0.9em";
 if (path.includes("launcher")) {
 	iTag3.textContent = "SamSprung TooUI is a free and open-source project, as this functionality was never meant to be restricted."
 } else if (path.includes("keyboard")) {
