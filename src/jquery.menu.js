@@ -72,5 +72,5 @@ function performNav() {
 	}
 	window.location.href = target
 }
-var navigation = document.getElementById("navigation");
+var navigation = document.getElementsByClassName("navigation")[0];
 navigation.setAttribute("onclick", "performNav()");

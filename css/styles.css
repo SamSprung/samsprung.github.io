@@ -50,3 +50,18 @@ div.readme img {
 		max-width: 75%;
 	}
 }
+
+.navigation {
+	padding-top: 15px;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+}
+.navigation img {
+  width: 40px;
+  height: 40px;
+}
+.navigation span {
+	font-size: 1.5em;
+  padding: 0 10px;
+}
