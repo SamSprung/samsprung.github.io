@@ -59,8 +59,9 @@ var page = path.split("/").pop();
 if (page.length <= 0)
 page = "index.html";
 
-if (navigator.userAgent.indexOf("SamSprung") != -1) {
+if (navigator.userAgent.includes("SamSprung")) {
   $('.google').empty();
+  $('.navigation').empty();
 }
 
 function performNav() {

@@ -16,12 +16,6 @@ body {
 	overflow-x: hidden;
 }
 
-p.google img {
-	display: block;
-	margin: 0 auto;
-	max-width: 50%;
-}
-
 #donate-button-container {
 	margin-top: 20px;
 }
@@ -49,6 +43,12 @@ div.readme img {
 	img#donate-button {
 		max-width: 75%;
 	}
+}
+
+p.google img {
+	display: block;
+	margin: 0 auto;
+	max-width: 50%;
 }
 
 .navigation {
