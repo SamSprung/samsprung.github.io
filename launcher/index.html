@@ -48,8 +48,10 @@
           Want to use your cover as a full screen without the Care+ monthly fees?
           <br />
           Not willing to pay the full price of a Galaxy Watch for only half of the UI?
+          <br />
+          Uncomfortable with providing your account without an obvious reason?
           <br /><br />
-          TooUI adds cover screen support for apps, full interactive notifications, widgets, quick toggles, voice launch, custom screen timeout, animated wallpapers, and more.
+          TooUI adds cover screen support for apps, full interactive notifications, widgets, quick toggles, voice launch, custom screen timeout, animated wallpapers, and more without recording how you choose to use it. Even our bug reports are filtered with your privacy in mind.
           <br /><br />
           Important: THIS IS NOT A COVER SCREEN WIDGET
           <br />
@@ -60,58 +62,60 @@
           <i>Notice: Bottom menus may be blocked by the navigation bar when launching apps. Please allow 3 seconds for the the bar to be hidden before reporting an issue.</i>
         </center>
         <br />
-        <button type="button" class="collapsible">How to Install SamSprung TooUI</button>
-        <div class="collapsible-content">
-          <p>
-            <ul>
-              <li><a href="https://github.com/SamSprung/SamSprung-TooUI/releases">Download apk from the latest release Assets</a></li>
-              <li>Open the apk with your favorite file manager</li>
-              <li>Follow the system prompts to install the apk</li>
-            </ul>
-          </p>
-        </div>
+        <div class="subsection">
+          <button type="button" class="collapsible">How to Install SamSprung TooUI</button>
+          <div class="collapsible-content">
+            <p>
+              <ul>
+                <li><a href="https://github.com/SamSprung/SamSprung-TooUI/releases">Download apk from the latest release Assets</a></li>
+                <li>Open the apk with your favorite file manager</li>
+                <li>Follow the system prompts to install the apk</li>
+              </ul>
+            </p>
+          </div>
 
-        <button type="button" class="collapsible">How to Enable SamSprung TooUI</button>
-        <div class="collapsible-content">
-          <p>
-            <h4>From Home Screen</h4>
-            <ul>
-              <li>Open SamSprung Launcher from the App Drawer</li>
-              <li>Click the switch in the top right to enable access</li>
-              <li>Make sure to return to the app from any prompts</li>
-              <li>Close device and tap the power button to enable</li>
-            </ul>
-          </p>
-        </div>
+          <button type="button" class="collapsible">How to Enable SamSprung TooUI</button>
+          <div class="collapsible-content">
+            <p>
+              <h4>From Home Screen</h4>
+              <ul>
+                <li>Open SamSprung Launcher from the App Drawer</li>
+                <li>Click the switch in the top right to enable access</li>
+                <li>Make sure to return to the app from any prompts</li>
+                <li>Close device and tap the power button to enable</li>
+              </ul>
+            </p>
+          </div>
 
-        <button type="button" class="collapsible">Secure Lock Screen Setup</button>
-        <div class="collapsible-content">
-          <p>
-            <ul>
-              <li>Settings -> Lock screen -> Screen lock type -> Fingerprints -> ON</li>
-              <li>(Optional) Settings -> Biometrics and security -> Fingerprints -> Fingerprint always on -> OFF</li>
-              <li>When launching an app, you will be prompted for fingerprint authentication</li>
-            </ul>
-          </p>
-        </div>
+          <button type="button" class="collapsible">Secure Lock Screen Setup</button>
+          <div class="collapsible-content">
+            <p>
+              <ul>
+                <li>Settings -> Lock screen -> Screen lock type -> Fingerprints -> ON</li>
+                <li>(Optional) Settings -> Biometrics and security -> Fingerprints -> Fingerprint always on -> OFF</li>
+                <li>When launching an app, you will be prompted for fingerprint authentication</li>
+              </ul>
+            </p>
+          </div>
 
-        <button type="button" class="collapsible">System Settings Overlay</button>
-        <div class="collapsible-content">
-          <p>
-            If you would like to prevent incompatibility with Settings, Developer Options provides a toggle to allow overlays.
-            <br />
-            This presents some risk for untrustworthy apps to interact with your device settings and should only be enabled if you trust all apps with overlay permission.
-          </p>
-        </div>
+          <button type="button" class="collapsible">System Settings Overlay</button>
+          <div class="collapsible-content">
+            <p>
+              If you would like to prevent incompatibility with Settings, Developer Options provides a toggle to allow overlays.
+              <br />
+              This presents some risk for untrustworthy apps to interact with your device settings and should only be enabled if you trust all apps with overlay permission.
+            </p>
+          </div>
 
-        <button type="button" class="collapsible">Prevent Service Termination</button>
-        <div class="collapsible-content">
-          <p>
-            <ul>
-              <li>Settings -> Apps -> SamSprung TooUI -> Battery -> Unrestricted</li>
-              <li>Note: Samsung removes "Never Sleeping" apps at their discrection</li>
-            </ul>
-          </p>
+          <button type="button" class="collapsible">Prevent Service Termination</button>
+          <div class="collapsible-content">
+            <p>
+              <ul>
+                <li>Settings -> Apps -> SamSprung TooUI -> Battery -> Unrestricted</li>
+                <li>Note: Samsung removes "Never Sleeping" apps at their discrection</li>
+              </ul>
+            </p>
+          </div>
         </div>
       </p>
     </div>
@@ -137,6 +141,8 @@
 
         <button type="button" class="collapsible hidden"></button>
         <div class="collapsible-content hidden"></div>
+
+        <div class="subsection">
 
         <button type="button" class="collapsible">Optional Permissions</button>
         <div class="collapsible-content">
@@ -218,6 +224,7 @@
             Toggling the switch next to an app will either hide (off) or show (on) the app in the cover screen drawer. As apps are installed or removed, this list will update. All apps are enabled by default.
           </p>
         </div>
+      </div>
       </p>
     </div>
 
@@ -268,16 +275,18 @@
           <button type="button" class="collapsible hidden"></button>
           <div class="collapsible-content hidden"></div>
 
-          <button type="button" class="collapsible">Settings Notifications</button>
-          <div class="collapsible-content">
-            <p>
-              <img src="img/settingspanel.png">
-              <br /><br />
+          <div class="sbpane">
+            <button type="button" class="collapsible">Settings Notifications</button>
+            <div class="collapsible-content">
+              <p>
+                <img src="img/settingspanel.png">
+                <br /><br />
 
-              When launching a notification that opens Settings, the panels become locked to the cover screen. This means that pressing the home button alone cannot clear them from the cover screen.
-              <br /><br />
-              To close a Settings panel launched from a notification, simply press the back button in the top left. This can be done before or after using the home navigation button to return to the drawer.
-            </p>
+                When launching a notification that opens Settings, the panels become locked to the cover screen. This means that pressing the home button alone cannot clear them from the cover screen.
+                <br /><br />
+                To close a Settings panel launched from a notification, simply press the back button in the top left. This can be done before or after using the home navigation button to return to the drawer.
+              </p>
+            </div>
           </div>
         </p>
       </div>
@@ -323,6 +332,6 @@
 <script src="../src/jquery.notice.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script src="../src/jquery.menu.js"></script>
-<script src="../src/jquery.tools.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
 <script src="../src/jquery.panes.js"></script>
 </html>

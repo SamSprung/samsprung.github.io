@@ -60,6 +60,8 @@ if (page.length <= 0)
 page = "index.html";
 
 var h1Tag = document.createElement('h1');
+h1Tag.setAttribute("class", "static");
+h1Tag.style.display = "block";
 h1Tag.style.paddingTop = "10px";
 h1Tag.style.paddingBottom = "8px";
 h1Tag.style.fontSize = "0.8em";

@@ -44,56 +44,58 @@
           After creating the method to enable keyboards as part of SamSprung TooUI, TooIME was started as a standalone cover screen IME in the hope of one day being natively supported.
         </center>
         <br />
-        <button type="button" class="collapsible">How to Install SamSprung TooIME</button>
-        <div class="collapsible-content">
-          <ul>
-            <li><a href="https://github.com/SamSprung/SamSprung-Keyboard/releases">Download apk from the latest release Assets</a></li>
-            <li>Open the apk with your favorite file manager</li>
-            <li>Follow the system prompts to install the apk</li>
-          </ul>
-        </div>
-
-        <button type="button" class="collapsible">How to Enable SamSprung TooIME</button>
-        <div class="collapsible-content">
-          <p>
-            <h4>From Home Screen</h4>
+        <div class="subsection">
+          <button type="button" class="collapsible">How to Install SamSprung TooIME</button>
+          <div class="collapsible-content">
             <ul>
-              <li>Open SamSprung Keyboard from the App Drawer</li>
-              <li>Enable the permission switches to enable access</li>
-              <li>Make sure to return to the app from any prompts</li>
-              <li>Enable the keyboard, but do not set as the default</li>
+              <li><a href="https://github.com/SamSprung/SamSprung-Keyboard/releases">Download apk from the latest release Assets</a></li>
+              <li>Open the apk with your favorite file manager</li>
+              <li>Follow the system prompts to install the apk</li>
             </ul>
-          </p>
-        </div>
+          </div>
 
-        <button type="button" class="collapsible">Secure Lock Screen Setup</button>
-        <div class="collapsible-content">
-          <p>
-            <ul>
-              <li>Settings -> Lock screen -> Screen lock type -> Fingerprints -> ON</li>
-              <li>(Optional) Settings -> Biometrics and security -> Fingerprints -> Fingerprint always on -> OFF</li>
-              <li>When launching an app, you will be prompted for fingerprint authentication</li>
-            </ul>
-          </p>
-        </div>
+          <button type="button" class="collapsible">How to Enable SamSprung TooIME</button>
+          <div class="collapsible-content">
+            <p>
+              <h4>From Home Screen</h4>
+              <ul>
+                <li>Open SamSprung Keyboard from the App Drawer</li>
+                <li>Enable the permission switches to enable access</li>
+                <li>Make sure to return to the app from any prompts</li>
+                <li>Enable the keyboard, but do not set as the default</li>
+              </ul>
+            </p>
+          </div>
 
-        <button type="button" class="collapsible">System Settings Overlay</button>
-        <div class="collapsible-content">
-          <p>
-            If you would like to prevent incompatibility with Settings, Developer Options provides a toggle to allow overlays.
-            <br />
-            This presents some risk for untrustworthy apps to interact with your device settings and should only be enabled if you trust all apps with overlay permission.
-          </p>
-        </div>
+          <button type="button" class="collapsible">Secure Lock Screen Setup</button>
+          <div class="collapsible-content">
+            <p>
+              <ul>
+                <li>Settings -> Lock screen -> Screen lock type -> Fingerprints -> ON</li>
+                <li>(Optional) Settings -> Biometrics and security -> Fingerprints -> Fingerprint always on -> OFF</li>
+                <li>When launching an app, you will be prompted for fingerprint authentication</li>
+              </ul>
+            </p>
+          </div>
 
-        <button type="button" class="collapsible">Prevent Service Termination</button>
-        <div class="collapsible-content">
-          <p>
-            <ul>
-              <li>Settings -> Apps -> SamSprung TooIME -> Battery -> Unrestricted</li>
-              <li>Note: Samsung removes "Never Sleeping" apps at their discrection</li>
-            </ul>
-          </p>
+          <button type="button" class="collapsible">System Settings Overlay</button>
+          <div class="collapsible-content">
+            <p>
+              If you would like to prevent incompatibility with Settings, Developer Options provides a toggle to allow overlays.
+              <br />
+              This presents some risk for untrustworthy apps to interact with your device settings and should only be enabled if you trust all apps with overlay permission.
+            </p>
+          </div>
+
+          <button type="button" class="collapsible">Prevent Service Termination</button>
+          <div class="collapsible-content">
+            <p>
+              <ul>
+                <li>Settings -> Apps -> SamSprung TooIME -> Battery -> Unrestricted</li>
+                <li>Note: Samsung removes "Never Sleeping" apps at their discrection</li>
+              </ul>
+            </p>
+          </div>
         </div>
       </p>
     </div>
@@ -116,29 +118,31 @@
         <button type="button" class="collapsible hidden"></button>
         <div class="collapsible-content hidden"></div>
 
-        <button type="button" class="collapsible">Required Permissions</button>
-        <div class="collapsible-content">
-          <p>
-            <img src="img/permissionitems.png">
-            <br /><br />
-            Accessibility will allow the keyboard to function. The accessibility service is strictly designed to transmit user-initiated key events. All accessibility actions are one way and do not read any information from the device.
-            <br /><br />
-            Enabling accessibility will enable the "Keyboard (IME)" settings. This is used to enable the onscreen keyboard. It only needs to be enabled as an option. It is not recommended to set it as default.
-            <br /><br />
-            Overlay permission is what allows the keyboard to appear on top of other windows. Without it, the keyboard will not be visible when using other apps. This permission is required to use the keyboard.
-          </p>
-        </div>
+        <div class="subsection">
+          <button type="button" class="collapsible">Required Permissions</button>
+          <div class="collapsible-content">
+            <p>
+              <img src="img/permissionitems.png">
+              <br /><br />
+              Accessibility will allow the keyboard to function. The accessibility service is strictly designed to transmit user-initiated key events. All accessibility actions are one way and do not read any information from the device.
+              <br /><br />
+              Enabling accessibility will enable the "Keyboard (IME)" settings. This is used to enable the onscreen keyboard. It only needs to be enabled as an option. It is not recommended to set it as default.
+              <br /><br />
+              Overlay permission is what allows the keyboard to appear on top of other windows. Without it, the keyboard will not be visible when using other apps. This permission is required to use the keyboard.
+            </p>
+          </div>
 
-        <button type="button" class="collapsible">Keyboard UI Options</button>
-        <div class="collapsible-content">
-          <p>
-            <img src="img/keyboardoptions.png">
-            <br /><br />
+          <button type="button" class="collapsible">Keyboard UI Options</button>
+          <div class="collapsible-content">
+            <p>
+              <img src="img/keyboardoptions.png">
+              <br /><br />
 
-            The color bars are a theme option. Click either bar to reveal the sliders and customize your theme. There are no preset themes. The colors you choose will be also be applied to various menus and icons throughout the interface.
-            <br /><br />
-            Sound and vibration options should be relatively obvious, but provide audible and tactile feedback when keys are pressed. This only applies to the conventional keyboard keys. Additional buttons are silent and do not vibrate.
-          </p>
+              The color bars are a theme option. Click either bar to reveal the sliders and customize your theme. There are no preset themes. The colors you choose will be also be applied to various menus and icons throughout the interface.
+              <br /><br />
+              Sound and vibration options should be relatively obvious, but provide audible and tactile feedback when keys are pressed. This only applies to the conventional keyboard keys. Additional buttons are silent and do not vibrate.
+            </p>
+          </div>
         </div>
       </p>
     </div>
@@ -161,6 +165,6 @@
 <script src="../src/jquery.notice.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script src="../src/jquery.menu.js"></script>
-<script src="../src/jquery.tools.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
 <script src="../src/jquery.panes.js"></script>
 </html>

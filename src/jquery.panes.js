@@ -53,34 +53,42 @@
  * subject to to the terms and conditions of the Apache License, Version 2.0.
  */
 
-$(function() {
-	$('.accordion').tabs('.accordion div.pane', {tabs: 'h1', effect: 'slide', initialIndex: null});
-});
-$.tools.tabs.addEffect("slide", function(i, done) {
-	// 1. upon hiding, the active pane has a ruby background color
-	this.getPanes().slideUp().css({backgroundColor: "rgba(255,255,255,0.4)"});
-	// 2. after a pane is revealed, its background is set to its original color (transparent)
-	this.getPanes().eq(i).slideDown(function()  {
-		$(this).css({backgroundColor: 'transparent'});
-		// the supplied callback must be called after the effect has finished its job
-		done.call();
-		window.scrollTo({ top: $('.accordion').offset().top + 10, behavior: 'smooth' });
-	});
-});
+ $(function() {
+ 	$( ".accordion" ).accordion({
+ 		header: 'h1:not(.static)',
+ 	  heightStyle: "content",
+ 		activate: function(event, ui) {
+         window.scrollTo({ top: $('.accordion').offset().top + 10, behavior: 'smooth' });
+   	}
+ 	});
+ 	$( ".subsection" ).accordion({
+ 		header: 'button.collapsible',
+ 	  heightStyle: "content",
+ 		collapsible: true,
+ 		active: false,
+ 		activate: function(event, ui) {
+  		 window.scrollTo({ top: $(this).offset().top, behavior: 'smooth' });
+  	 }
+ 	});
+ });
 
-var headers = document.getElementsByTagName("h1");
-var coll = document.getElementsByClassName("collapsible");
-for (var i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-	this.classList.toggle("active");
-	var content = this.nextElementSibling;
-	if (content.style.display === "block") {
-	  content.style.display = "none";
-	} else {
-	  content.style.display = "block";
+var headers = document.getElementsByClassName("subpane");
+	for (var x = 0; x < headers.length; x++) {
+	var coll = headers[x].getElementsByClassName("collapsible");
+	for (var i = 0; i < coll.length; i++) {
+		coll[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var content = this.nextElementSibling;
+			if (content.style.display === "block") {
+				content.style.display = "none";
+			} else {
+				content.style.display = "block";
+        window.scrollTo({ top: content.offsetTop, behavior: 'smooth' });
+			}
+		});
 	}
-  });
 }
+
 var urlParams = new URLSearchParams(window.location.search);
 window.addEventListener('load', function() {
 	if (urlParams.has('s') || urlParams.has('q')) {
