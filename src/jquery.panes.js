@@ -53,60 +53,74 @@
  * subject to to the terms and conditions of the Apache License, Version 2.0.
  */
 
- $(function() {
- 	$( ".accordion" ).accordion({
- 		header: 'h1:not(.static)',
- 	  heightStyle: "content",
- 		activate: function(event, ui) {
-         window.scrollTo({ top: $('.accordion').offset().top + 10, behavior: 'smooth' });
-   	}
- 	});
- 	$( ".subsection" ).accordion({
- 		header: 'button.collapsible',
- 	  heightStyle: "content",
- 		collapsible: true,
- 		active: false,
- 		activate: function(event, ui) {
-  		 window.scrollTo({ top: $(this).offset().top, behavior: 'smooth' });
-  	 }
- 	});
- });
+$(function() {
+	$( ".accordion" ).accordion({
+		header: 'h1:not(.static)',
+	  heightStyle: "content",
+		activate: function(event, ui) {
+       window.scrollTo({ top: $('.accordion').offset().top + 10, behavior: 'smooth' });
+ 	}
+	});
+	$( ".subsection" ).accordion({
+		header: 'button.collapsible',
+	  heightStyle: "content",
+		collapsible: true,
+		active: false,
+		activate: function(event, ui) {
+		 window.scrollTo({ top: $(this).offset().top, behavior: 'smooth' });
+	 }
+	});
+});
 
-var headers = document.getElementsByClassName("subpane");
-	for (var x = 0; x < headers.length; x++) {
-	var coll = headers[x].getElementsByClassName("collapsible");
-	for (var i = 0; i < coll.length; i++) {
-		coll[i].addEventListener("click", function() {
-			this.classList.toggle("active");
-			var content = this.nextElementSibling;
-			if (content.style.display === "block") {
-				content.style.display = "none";
-			} else {
-				content.style.display = "block";
-        window.scrollTo({ top: content.offsetTop, behavior: 'smooth' });
-			}
-		});
-	}
+var subpanes = document.getElementsByClassName("subpane");
+for (var x = 0; x < subpanes.length; x++) {
+ var buttons = subpanes[x].getElementsByClassName("collapsible");
+ for (var i = 0; i < buttons.length; i++) {
+   buttons[i].addEventListener("click", function() {
+     this.classList.toggle("active");
+     var content = this.nextElementSibling;
+     if (content.style.display === "block") {
+       content.style.display = "none";
+     } else {
+       content.style.display = "block";
+       window.scrollTo({ top: content.offsetTop, behavior: 'smooth' });
+     }
+   });
+ }
 }
 
 var urlParams = new URLSearchParams(window.location.search);
 window.addEventListener('load', function() {
-	if (urlParams.has('s') || urlParams.has('q')) {
-		var params = urlParams.has('q') ? urlParams.get('q') : urlParams.get('s');
-		for (var i = 0; i < headers.length; i++) {
-			if (headers[i].innerHTML.toLowerCase().includes(params.toLowerCase())) {
-				headers[i].click();
-			}
-		}
-	}
-	if (urlParams.has('b') || urlParams.has('d')) {
-		var params = urlParams.has('d') ? urlParams.get('d') : urlParams.get('b');
-		for (var i = 0; i < coll.length; i++) {
-			if (coll[i].innerHTML.toLowerCase().includes(params.toLowerCase())) {
-				coll[i].classList.toggle("active");
-				coll[i].nextElementSibling.style.display = "block";
-				window.scrollTo({ top: coll[i].nextElementSibling.offsetTop, behavior: 'smooth' });
-			}
-		}
-	}
+  if (urlParams.has('s') || urlParams.has('q')) {
+    var headings = document.getElementsByTagName("h1");
+    var params = urlParams.has('q') ? urlParams.get('q') : urlParams.get('s');
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].innerHTML.toLowerCase().includes(params.toLowerCase())) {
+        headings[i].click();
+      }
+    }
+  }
+  if (urlParams.has('b') || urlParams.has('d')) {
+    var params = urlParams.has('d') ? urlParams.get('d') : urlParams.get('b');
+    var subpanes = document.getElementsByClassName("subpane");
+    for (var x = 0; x < subpanes.length; x++) {
+      var buttons = subpanes[x].getElementsByClassName("collapsible");
+      for (var i = 0; i < buttons.length; i++) {
+        if (buttons[i].innerHTML.toLowerCase().includes(params.toLowerCase())) {
+          buttons[i].classList.toggle("active");
+          buttons[i].nextElementSibling.style.display = "block";
+          window.scrollTo({ top: buttons[i].nextElementSibling.offsetTop, behavior: 'smooth' });
+        }
+      }
+    }
+    var subsections = document.getElementsByClassName("subsection");
+    for (var x = 0; x < subsections.length; x++) {
+      var buttons = subsections[x].getElementsByClassName("collapsible");
+      for (var i = 0; i < buttons.length; i++) {
+        if (buttons[i].innerHTML.toLowerCase().includes(params.toLowerCase())) {
+          buttons[i].click();
+        }
+      }
+    }
+  }
 });
