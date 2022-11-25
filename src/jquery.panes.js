@@ -53,24 +53,24 @@
  * subject to to the terms and conditions of the Apache License, Version 2.0.
  */
 
-$(function() {
-	$( ".accordion" ).accordion({
-		header: 'h1:not(.static)',
-	  heightStyle: "content",
-		activate: function(event, ui) {
-       window.scrollTo({ top: $('.accordion').offset().top + 10, behavior: 'smooth' });
- 	}
-	});
-	$( ".subsection" ).accordion({
-		header: 'button.collapsible',
-	  heightStyle: "content",
-		collapsible: true,
-		active: false,
-		activate: function(event, ui) {
-		 window.scrollTo({ top: $(this).offset().top, behavior: 'smooth' });
-	 }
-	});
-});
+ $(function() {
+  $( ".accordion" ).accordion({
+ 	 header: 'h1:not(.static)',
+ 	 heightStyle: "content",
+ 	 activate: function(event, ui) {
+ 		 window.scrollTo({ top: $(this).offset().top, behavior: 'smooth' });
+ 	 }
+  });
+  $( ".subsection" ).accordion({
+ 	 header: 'button.collapsible',
+ 	 heightStyle: "content",
+ 	 collapsible: true,
+ 	 active: false,
+ 	 activate: function(event, ui) {
+ 		 window.scrollTo({ top: $(this).offset().top, behavior: 'smooth' });
+ 	 }
+  });
+ });
 
 var subpanes = document.getElementsByClassName("subpane");
 for (var x = 0; x < subpanes.length; x++) {
