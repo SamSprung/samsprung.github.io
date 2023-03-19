@@ -18,11 +18,6 @@ var page = path.split("/").pop();
 if (page.length <= 0)
 page = "index.html";
 
-if (navigator.userAgent.includes("SamSprung")) {
-  $('.google').empty();
-  $('.navigation').empty();
-}
-
 function performNav() {
 	var target;
 	if (path.includes("launcher")) {
