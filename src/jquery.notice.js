@@ -35,12 +35,12 @@ var centerTag = document.createElement('center');
 pTag.appendChild(centerTag);
 var iTag = document.createElement('i');
 iTag.style.fontSize = "0.9em";
-iTag.textContent = "SamSprung is not affiliated, associated, authorized, endorsed by, or in any way connected with Samsung."
+iTag.textContent = "SamSprung is not affiliated, authorized, sponsored, endorsed, or in any way connected with Samsung or its subsidiaries."
 centerTag.appendChild(iTag);
 centerTag.appendChild(document.createElement('br'));
 var iTag2 = document.createElement('i');
 iTag2.style.fontSize = "0.9em";
-iTag2.textContent = "SamSprung features, some proprietary, have been written or modified specifically for this project. Steal them if you feel you must, but don't think it goes unnoticed."
+iTag2.textContent = "SamSprung features, some proprietary, have been written or modified specifically for this project. While abuse of public source does occur, don't think it goes unnoticed."
 centerTag.appendChild(iTag2);
 centerTag.appendChild(document.createElement('br'));
 var iTag3 = document.createElement('i');
