@@ -1,0 +1,68 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta property="og:title" content="SamSprung" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="A complete home experience on the cover screen" />
+  <meta property="og:url" content="https://samsprung.github.io" />
+  <meta property="og:image" content="https://samsprung.github.io/img/feature_graphic.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1240" />
+  <meta property="og:image:height" content="1880" />
+  <link rel="apple-touch-icon" href="img/favicon.png" />
+  <link rel="shortcut icon" href="img/favicon.png" />
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="480">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="viewport" content="target-densitydpi=device-dpi" />
+  <!-- Mobile IE needs ClearType for smoothing fonts -->
+  <meta http-equiv="cleartype" content="on">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/panes.css" />
+  <link rel="stylesheet" href="css/donate.css" />
+  <title>SamSprung: Donations</title>
+</head>
+<body>
+  <div data-role="page" data-theme="a" class="wrapper">
+    <div id="sidenav"></div><span id="menubtn"></span>
+    <center>
+      <p class="google" align="center">
+        <a href="https://play.google.com/store/apps/details?id=com.eightbit.samsprung"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+      </p>
+      <p class="coffee" align="center">
+        <a href="https://www.buymeacoffee.com/abandonedcart"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=tagmo&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
+      </p>
+      <p class="sponsor" align="center">
+        <iframe src="https://github.com/sponsors/AbandonedCart/card" title="Sponsor AbandonedCart" width="50%" style="margin-bottom: 1em;"></iframe>
+      </p>
+      <div id="donate-button-container">
+        <div id="donate-button"></div>
+        <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+        <script>
+        PayPal.Donation.Button({
+          env:'production',
+          hosted_button_id:'Q2LFH2SC8RHRN',
+          image: {
+            src:'https://ubuntubudgie.org/wp-content/uploads/2021/10/support_paypal.svg',
+            alt:'Donate with PayPal button',
+            title:'PayPal - The safer, easier way to pay online!',
+          }
+        }).render('#donate-button');
+        </script>
+      </div>
+      <p class="qr_code">
+        <img src="img/donateqr.png">
+      </p>
+    </center>
+  </div>
+</body>
+<script src="src/jquery.notice.js"></script>
+<script src="src/jquery.menu.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+<script src="src/jquery.panes.js"></script>
+</html>
