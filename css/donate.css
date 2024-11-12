@@ -1,6 +1,6 @@
 p.google {
 	margin-top: -0.5em;
-	margin-bottom: -1.5em;
+	margin-bottom: -1em;
 }
 p.google img {
 	display: block;
@@ -13,7 +13,13 @@ p.coffee img {
 	margin: 0 auto;
 	min-width: 40%;
 	max-width: 50%;
-	padding-bottom: 1.5em;
+}
+
+p.wishlist img {
+	display: block;
+	margin: 0 auto;
+	min-width: 30%;
+	max-width: 40%;
 }
 
 div#donate-button-container {
@@ -34,5 +40,5 @@ p.sponsor img {
 
 p.qr_code {
   margin-top: 3em;
-  margin-bottom: 5em;
+  margin-bottom: 3em;
 }
