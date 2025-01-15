@@ -5,40 +5,41 @@ p.google {
 p.google img {
 	display: block;
 	margin: 0 auto;
-	max-width: 50%;
+	max-width: 60%;
 }
 
 p.coffee img {
 	display: block;
 	margin: 0 auto;
-	min-width: 40%;
-	max-width: 50%;
+	width: 40%;
+	margin-bottom: 1.5em;
+}
+
+p.kofi img {
+	display: block;
+	margin: 0 auto;
+	width: 40%;
 }
 
 p.wishlist img {
 	display: block;
 	margin: 0 auto;
-	min-width: 30%;
-	max-width: 40%;
+	width: 40%;
 }
 
 div#donate-button-container {
 	margin-top: 1.5em;
+	margin-bottom: 1.5em;
 }
 
 img#donate-button {
 	display: block;
 	margin: 0 auto;
-	max-width: 50%;
+	width: 40%;
 }
 
 p.sponsor img {
 	display: block;
 	margin: 0 auto;
 	max-width: 50%;
-}
-
-p.qr_code {
-  margin-top: 3em;
-  margin-bottom: 3em;
 }

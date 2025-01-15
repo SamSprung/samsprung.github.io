@@ -28,10 +28,9 @@
 </head>
 <body>
   <div data-role="page" data-theme="a" class="wrapper">
-    <div id="sidenav"></div><span id="menubtn"></span>
     <center>
       <p class="google" align="center">
-        <a href="https://play.google.com/store/apps/details?id=com.eightbit.samsprung.ime"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+        <a href="https://play.google.com/store/apps/details?id=com.hiddenramblings.tagmo.eightbit"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
       </p>
       <div id="donate-button-container">
         <div id="donate-button"></div>
@@ -48,11 +47,11 @@
         }).render('#donate-button');
         </script>
       </div>
-      <p class="qr_code">
-        <img src="img/donateqr.png">
-      </p>
       <p class="coffee" align="center">
         <a href="https://www.buymeacoffee.com/abandonedcart"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=tagmo&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
+      </p>
+      <p class="kofi" align="center">
+        <a href="https://ko-fi.com/abandonedcart"><img src="https://storage.ko-fi.com/cdn/brandasset/v2/support_me_on_kofi_red.png" /></a>
       </p>
       <p class="wishlist" align="center">
         <a href="https://www.amazon.com/hz/wishlist/ls/2ISJTKHPE1RJ"><img src='https://educatesimplify.com/wp-content/uploads/2022/01/buy-on-amazon-button-png-3.png'/></a>
@@ -60,9 +59,24 @@
       <p class="sponsor" align="center">
         <iframe src="https://github.com/sponsors/AbandonedCart/card" title="Sponsor AbandonedCart" width="50%" style="margin-bottom: 1em;"></iframe>
       </p>
+      <p><h4><i>
+        Diclaimer: Donations are not a purchase and no purchase is necessary to use any free resources associated with Samsprung.
+      </i></h4></p>
+      <br />
     </center>
   </div>
 </body>
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('abandonedcart', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support me',
+    'floating-chat.donateButton.background-color': '#f45d22',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
+</script>
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="abandonedcart" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FD0" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
 <script src="src/jquery.notice.js"></script>
 <script src="src/jquery.menu.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
