@@ -20,7 +20,9 @@ page = "index.html";
 
 function performNav() {
 	var target;
-	if (path.includes("launcher")) {
+	if (page == "donate.html") {
+		target = window.location.href.replace("donate.html", "/");
+	} else if (path.includes("launcher")) {
 		target = window.location.href.replace("launcher", "keyboard");
 	} else if (path.includes("keyboard")) {
 		target = window.location.href.replace("keyboard", "launcher");
