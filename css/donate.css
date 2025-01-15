@@ -19,6 +19,7 @@ p.kofi img {
 	display: block;
 	margin: 0 auto;
 	width: 40%;
+	margin-bottom: 1.5em;
 }
 
 p.wishlist img {
@@ -41,5 +42,5 @@ img#donate-button {
 p.sponsor img {
 	display: block;
 	margin: 0 auto;
-	max-width: 90%;
+	width: 40%;
 }
