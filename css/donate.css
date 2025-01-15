@@ -5,7 +5,7 @@ p.google {
 p.google img {
 	display: block;
 	margin: 0 auto;
-	max-width: 60%;
+	width: 45%;
 }
 
 p.coffee img {
@@ -41,5 +41,5 @@ img#donate-button {
 p.sponsor img {
 	display: block;
 	margin: 0 auto;
-	max-width: 50%;
+	width: 60%;
 }
